@@ -1,0 +1,21 @@
+body{
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+
+hi{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.brooks {
+    font-size: large;
+}
+
+#craig {
+    background-color: bisque;
+}
+
+a:hover{
+    color: plum;
+}
