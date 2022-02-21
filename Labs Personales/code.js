@@ -1,6 +1,8 @@
 document.getElementById("h1").innerHTML = "Datos de Lab"
 
-function showImage() {
+
+
+function showText() {
     // Get the checkbox
     var checkBox = document.getElementById("valorant");
     // Get the output text
@@ -12,4 +14,5 @@ function showImage() {
     } else {
       text.style.display = "none";
     }
-  }
+}
+  
