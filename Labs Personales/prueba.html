@@ -1,14 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-mx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Personal</title>
+
+    <style>
+      h1{
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>Everybody go to the disco</h1>
-    <h2>Esto es un hello World</h2>
-    <h3>Algo mas para probar el texto</h3>
+    <h1 id="h1" style="color: gold;">Datos de Información</h1>
+    <div>Nombre: Jaime López Hernández</div>
+    <div>Matrícula: A00571842</div>
+    <div>Correo electrónico: A00571842@tec.mx</div>
+
+    <p>
+      <b> ¿Cuál es la diferencia entre Internet y la World Wide Web?</b>
+<p>
+</p>
+      La World Wide Web es una red de páginas web que se encuentran por sus direcciones. 
+      Internet es la red de redes que constituye la base de la web. Internet es una red mundial de miles de millones de ordenadores y otros dispositivos electrónicos. (UAB, 2019)
+
+    </p>
+
+    <p>
+      <b> ¿Cuáles son las partes de un URL?</b>
+<p>
+</p>
+La URL (Localizador Uniforme de Recursos). Una URL es una dirección web utilizada para identificar recursos en la web.
+Estas son las partes que conforman una URL
+Protocolo - Que incluye HTTP, HTTPS, Protocolo de Transferencia de Archivos (FTP) , Protocolo Simple de Transferencia de Correo (SMTP).
+Dominio - Nombre que se utiliza para identificar una o varias direcciones IP donde se encuentra el recurso.
+Ruta - Especifica la ubicación del recurso en el servidor.
+Parámetros - Datos adicionales utilizados para identificar o filtrar el recurso en el servidor. (Aviani, 2019)
+    </p>
+
+    <p>
+      <b> ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</b>
+<p>
+</p>
+El método Get se utiliza para recuperar u obtener la información del servidor dado utilizando una URL determinada.
+El método Post se utiliza para insertar nuevos elementos en el servidor backend.
+El método PUT se utiliza más a menudo para actualizar un recurso existente.
+El método PATCH se utiliza para actualizar los valores de las propiedades del recurso.
+El método DELETE se utiliza para eliminar un recurso especificado por su URI.
+El método HEAD es muy similar al get, pero sólo transfiere la línea de estado y la sección de cabecera. (Rafiq, 2020)
+
+    </p>
+
+    <p>
+      <b> ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</b>
+<p>
+</p>
+Cuando se ingresa al formulario se utiliza el método GET debido a que se tiene que obtener la información del servidor. Una vez contestado el formulario se utiliza el método PUT para actualizar la información.
+    </p>
+
+    <p>
+      <b>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</b>
+<p>
+</p>
+Cuando se accede a una página a través de un URL se utiliza el método GET. 
+    </p>
+
+    <p>
+      <b>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error? </b>
+<p>
+</p>
+Un código de estado HTTP 200 significa éxito. El cliente ha solicitado documentos al servidor. El servidor ha respondido al cliente y le ha entregado los documentos. (Griffth, 2021).
+    </p>
+
+    <p>
+      <b> ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</b>
+<p>
+</p>
+Cuando ocurre este error no es responsabilidad del desarrollador de arreglarlo. Un código de estado HTTP 404 significa básicamente que la URL solicitada simplemente no se encontró. Al reportar un error 404 podría significar que la página simplemente no existe, o también podría causarla cuando el usuario escribe mal la URL. Esto podría "arreglarse" recomendando enlaces populares que sean similares al que el usuario solicitó. (Griffth, 2021).
+    </p>
+
+    <p>
+      <b>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</b>
+<p>
+</p>
+El código de estado 500 "error interno del servidor" es un error en el lado del servidor. Esto significa que el servidor encontró algo inesperado que le impidió cumplir con la solicitud. Esto podría ser ambiguo debido a la naturaleza de únicamente notificar que algo está mal, pero no señalar la raíz exacta del problema en el servidor. En este caso, el desarrollador es responsable de solucionar el problema lo antes posible.
+    </p>
+
+    <p>
+      <b> ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</b>
+<p>
+</p>
+Los elementos obsoletos son aquellos que se permiten, pero no se recomiendan, y están siendo sustituidos por otros más nuevos.
+Algunos atributos de HTML4 que ya no se permiten en HTML5 y que se han eliminado por completo son los siguientes: img e iframe. caption, iframe, img, input, object, legend, table, hr, div, h1, h2, h3, h4, h5, h6, p, col, colgroup, tbody, td, tfoot, th, thead y tr. (whwhen, 2022)
+    </p>
+
+<footer>
+<div>Editor de HTML utilizado: Visual Studio Code</div>
+<p>Descubre el editor en la siguiente página: <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VSCode</a>.</p>
+
+
+</footer>
+    <script src="code.js"></script>
   </body>
 </html>
