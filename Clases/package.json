@@ -1,0 +1,21 @@
+{
+  "name": "chevales",
+  "version": "1.0.0",
+  "description": "contenido de caballos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Jaime-prog/TC2005B_Labs.git)"
+  },
+  "keywords": [
+    "nothing"
+  ],
+  "author": "Jaime Lopez",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
