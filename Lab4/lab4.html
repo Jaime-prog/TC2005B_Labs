@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio 4</title>
+</head>
+
+<body>
+    <header>
+        <h1>Laboratorio 4: Fundamentos de JavaScript</h1>
+    </header>
+    <nav>
+        <h1>Jaime López Hernández</h1>
+        <h3>A00571842</h3>
+        <h3>A00571842@tec.mx</h3>
+
+    </nav>
+    <section>
+        <h1>Pruebas para JavaScript</h1>
+        <p style="text-align:left"><strong>1. Tabla con los números del 1 al número dado con sus cuadrados y cubos</strong></p>
+        <div id="answer1"></div>
+        <br></br>
+
+        <p><strong>2. Resultado de la suma de 2 números generados de manera aleatoria</strong></p>
+        <br></br>
+        <div id="answer2"></div>
+        <br></br><br></br>
+
+        <p><b>3. Contador de positivos, negativos, y ceros</b></p>
+        <br>
+        <br>
+        <p>Se esperaba la siguiente respuesta: </p>
+        <br></br>
+        <div id="testCounter"></div>
+        <br></br>
+        <h3><b>Arreglo aleatorio:</b></h3><br>
+        <div id="answer3"></div>
+        <br></br><br></br>
+
+        <p><strong>4. Promedios de renglones de de matriz</strong></p>
+        <br></br>
+        <h3><b>Prueba Promedio:</b></h3>
+        <br>
+        <p>Se esperaba la siguiente respuesta:</p>
+        <br></br>
+        <div id="pruebaPromedio"></div>
+        <br></br>
+        <h3><strong>Arreglo aleatorio:</strong></h3><br>
+        <div id="answer4"></div>
+        <br></br> <br></br>
+
+        <p><strong>5. Número con sus dígitos en orden inverso</strong></p>
+        <br></br>
+        <h3><strong>Numero generado aleatoriamente: </strong></h3>
+        <br>
+        <p>Respuesta esperada:</p>
+        <br></br>
+        <div id="pruebaInverso"></div>
+        <br></br>
+        <h3><strong>Numero aleatorio:</strong></h3><br>
+        <div id="answer5"></div>
+        <br></br><br></br>
+
+        <h1> Preguntas del Laboratorio</h1>
+        <h3>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</h3>
+        <article>
+            Hay varias diferencias entre Java y JavaScript. Algunas de estas distinciones son: que java puede ejecutarse
+            en cualquier máquina virtual o navegador, mientras que el código JavaScript puede ejecutarse en el navegador
+            y también podría ejecutarse en un servidor.
+            Otra diferencia importante es que java es un lenguaje de programación orientado a objetos, y JavaScript es
+            un lenguaje de scripting basado en objetos. Además, Java tiene un enfoque de concurrencia basado en hilos,
+            mientras que JavaScript tiene un enfoque de concurrencia basado en eventos. (GeeksforGeeks, 2019)</article>
+        </article>
+        <br></br>
+
+        <h3>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</h3>
+        <article>
+
+            En general, hay dos grupos principales de métodos para el objeto Fecha. Los métodos estáticos y los métodos
+            de instancia. Aquí hay una lista de algunos de estos métodos: 
+            <br>
+            </br>
+            Date.prototype.getYear()
+            <br>
+            </br>
+            Date.prototype.getTimezoneOffset()
+            <br>
+            </br>
+            Date.prototype.setUTCMonth()
+            <br>
+            </br>
+            Date.prototype.toTimeString()
+            <br>
+            </br>
+            Date.prototype.valueOf()
+            <br>
+            </br>
+            Date.prototype.getUTCMinutes()
+            <br>
+            </br>
+            (MDN Web Docs, 2020)
+            <br>
+            </br>
+        </article>
+        <br></br>
+
+        <h3>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</h3>
+        <article>
+            También hay varios métodos para los arreglos, como:
+            <p>
+            </p>
+            El método toString() convierte una matriz en una cadena
+            <p>
+            </p>
+            El método pop() elimina el último elemento de una matriz
+            <p>
+            </p>
+            El método push() añade un nuevo elemento a una matriz
+            <p>
+            </p>
+            El método shift() elimina el primer elemento del array y acomoda el resto de los elementos.
+            <p>
+            </p>
+            El método unshift() añade un nuevo elemento (al principio) a un array.
+            <p>
+            </p>
+            (w3schools, 2019)
+        </article>
+        <br></br>
+
+        <h3>¿Cómo se declara una variable con alcance local dentro de una función?</h3>
+        <article>
+            <p>
+                Para declarar una variable que solo tenga alcance local dentro de una función se puede utilizar “let”.
+                Si no se declara la variable entonces automáticamente se convierte en una variable global. (w3schools,
+                2019b)
+            </p>
+        </article>
+        <br></br>
+
+        <h3>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h3>
+        <article>
+            <p>
+                El problema con el uso de variables globales reside en que pueden ser fácilmente modificadas por
+                cualquier función o bloque definido posteriormente dentro del script, o múltiples scripts, esto podría
+                resultar en problemas de depuración especialmente para grandes bases de código.
+                (GeeksforGeeks, 2022)
+            </p>
+        </article>
+        <br></br>
+
+    </section>
+    <script src="lab4.js"></script>
+</body>
+
+<footer>
+    <article>Editor de HTML utilizado: Visual Studio Code</article>
+    <article>Descubre el editor en la siguiente página: <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VSCode</a>.</article>
+    <br>
+    </br>
+    <h3>Bibliografía:</h3>
+    <ul>
+
+        <li> MDN Web Docs. (2020). Date. MDN Web Docs. de
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">MDN</a></li>
+        <br><br/>
+        <li> GeeksforGeeks. (2019). Difference between Java and JavaScript - GeeksforGeeks. de
+            <a href="https://www.geeksforgeeks.org/difference-between-java-and-javascript/">GeeksforGeeks</a></li>
+        <br><br/>
+        <li> GeeksforGeeks. (2022). Why to avoid global variables in JavaScript ? GeeksforGeeks. de
+            <a href="https://www.geeksforgeeks.org/why-to-avoid-global-variables-in-javascript/">GeeksforGeeks</a></li>
+        <br><br/>
+        <li> w3schools. (2020a). CSS !important Property. www.w3schools.com. de
+            <a href="https://www.w3schools.com/css/css_important.asp">w3schools</a></li>
+        <br><br/>
+        <li> w3schools. (2020b). HTML Background Images. www.w3schools.com. de
+            <a href="https://www.w3schools.com/html/html_images_background.asp">w3schools</a></li>
+        <br><br/>
+    </ul>
+
+
+</footer>
