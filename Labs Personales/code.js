@@ -1,6 +1,3 @@
-var potencias = secondAndThirdPower;
-potencias();
-
 document.getElementById("h1").innerHTML = "Datos de Lab";
 
 let table = document.createElement('table');
@@ -27,17 +24,7 @@ function showText() {
   }
 }
 
-function secondAndThirdPower() {
-  var num = prompt("Favor de ingresar cualquier entero ", "1");
-  for (let i = 0; i < num+1; i++) {
-    if (i != 0 && i<=num) {
-      square = Math.pow(i, 2);
-      cube = Math.pow(i, 3);
-      document.write("Cuadrado: ", square, "Cubo: ", cube);
-    }
-   
-  }
-}
+
 
 
 
