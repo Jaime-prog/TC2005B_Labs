@@ -25,11 +25,11 @@ const usuarioSuma = prompt("¿Cuánto es: " + num1 + "+" + num2 + "?");
 var endTime = Date.now();
 
 function sumar(){
-    sistemaSuma = num1 + num2;
+    resultado = num1 + num2;
 
-    let sistemaSuma = "La suma de " + num1 + " + " + num2 + " es: " + sistemaSuma + "<br></br>"
+    let sistemaSuma = "La suma de " + num1 + " + " + num2 + " es: " + resultado + "<br></br>"
     
-    if (sistemaSuma == usuarioSuma){
+    if (resultado == usuarioSuma){
         sistemaSuma = sistemaSuma + "La suma ingresada es correcta";
     }
     else{
@@ -39,8 +39,8 @@ function sumar(){
     let tiempo = (endTime - startTime)/1000;
 
     sistemaSuma = sistemaSuma + "<br></br> El usuario se tardo: " + tiempo + " segundos "+ "en contestar";
-
     return sistemaSuma;
+    
 }
 
 document.getElementById("answer2").innerHTML = sumar();
@@ -64,7 +64,7 @@ function arrayAleatorio(){
 }
 
 
-//Para imprimir el array
+//Funcion para mostrar el arreglo
 function imprimirArray(array){
 
     var stringArray = "";
@@ -111,7 +111,6 @@ function contador(arrayToCount) {
 }
 document.getElementById("answer3").innerHTML = contador(arrayToCount);
 
-
 //Ejercicio 4 Metodo promedio de matriz
 
 var prueba_promedio = [3,5,6,-1]
@@ -154,17 +153,6 @@ document.getElementById("answer4").innerHTML = promedios(datos);
 
 
 //Ejercicio 5  Función inverso
-
-var prueba_inverso = 456
-
-var esperado = "Número = 456<br></br>" + "Invertido: 654<br></br><br></br>"
-
-esperado = esperado + "<p><em>Por función (Respuesta obtenida)</em><p></p><br>"
-
-var funcion_inverso = inverso(prueba_inverso)
-
-esperado = esperado + funcion_inverso
-
 var numero = Math.floor( Math.random() * 157);
 
 
@@ -177,14 +165,42 @@ function inverso(numero){
     resto = Math.floor(resto / 10)
   } while ( resto > 0 )
 
-  respuesta = "Número = " + numero +"<br></br>" + "Invertido: " + invertido
+  respuesta = "Número original: " + numero +"<br></br>" + "Numero invertido: " + invertido
   return respuesta
 
 }
 
-document.getElementById("pruebaInverso").innerHTML = esperado;
 document.getElementById("answer5").innerHTML = inverso(numero);
 
 
 //Ejercicio 6 
+
+class Computer{
+    constructor(cpu, gpu, cost, shipping, year) {
+        this.cpu = cpu;
+        this.gpu = gpu;
+        this.cost = cost;
+        this.shipping = shipping;
+        this.year = year;
+    }
+
+    totalCost(){
+        return this.cost + this.shipping;
+    }
+    
+    totalSpecs(){
+        return this.cpu + this.gpu; 
+    }
+
+}
+
+// Nuevo objeto
+
+let pc = new Computer("AMD Ryzen 5", "RTX 2080 RTI", 10000, 150)
+
+document.getElementById("answer6").innerHTML = pc.totalCost();
+document.getElementById("answer7").innerHTML = pc.totalSpecs();
+
+
+
 
