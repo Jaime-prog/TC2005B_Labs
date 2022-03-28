@@ -5,41 +5,164 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Laboratorio 5</title>
 </head>
-
+ 
 <body>
     <header>
+       
+
         <h1>Lab 5: Frameworks de estilo</h1>
     </header>
     <nav>
-        <h1>Jaime López Hernández</h1>
-        <h3>A00571842</h3>
-        <h3>A00571842@tec.mx</h3>
+        <h4>Jaime López Hernández</h4>
+        <h4>A00571842</h4>
+        <h4>A00571842@tec.mx</h4>
 
     </nav>
+
+    <main role="main">
+
+        <section class="jumbotron text-center">
+          <div class="container">
+            <h1 class="jumbotron-heading">Ejemplo de un album</h1>
+            <p class="lead text-muted">Album que rescata algunas de las imágenes más impactantes sobre la belleza del entorno en el que existimos y pasan desapercibidas en el día a día</p>
+            <p>
+              <a href="#" class="btn btn-primary my-2">Naturaleza</a>
+              <a href="#" class="btn btn-secondary my-2">Naturaleza Diaria</a>
+            </p>
+          </div>
+        </section>
+  
+        <div class="album py-5 bg-light">
+          <div class="container">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="https://images.pexels.com/photos/4947401/pexels-photo-4947401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-holder-rendered="true">
+                  <div class="card-body">
+                    <p class="card-text">Supermercados en el vecindario</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="https://images.pexels.com/photos/7753054/pexels-photo-7753054.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-holder-rendered="true">
+                  <div class="card-body">
+                    <p class="card-text">Camino por el bosque</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="https://images.pexels.com/photos/982263/pexels-photo-982263.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-holder-rendered="true">
+                  <div class="card-body">
+                    <p class="card-text">Orilla del mar</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="https://images.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-holder-rendered="true">
+                  <div class="card-body">
+                    <p class="card-text">Camino a casa con hojas</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="https://images.pexels.com/photos/36762/scarlet-honeyeater-bird-red-feathers.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-holder-rendered="true">
+                  <div class="card-body">
+                    <p class="card-text">Colibri Reposando</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="https://images.pexels.com/photos/1126384/pexels-photo-1126384.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-holder-rendered="true">
+                  <div class="card-body">
+                    <p class="card-text">Pájaros pasando por el horizonte</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </main>
+    
     <section>
         <h1>Exploración de Frameworks</h1>
-        <p style="text-align:left"><strong>Aplicación del framework y sus componentes a alguno de los laboratorios</strong></p>
+        <p style="text-align:left"><strong>Aplicación del framework y sus componentes a alguno de los
+                laboratorios</strong></p>
         <div id="answer1"></div>
         <br></br><br></br>
 
         <h1> Preguntas del Laboratorio</h1>
         <h3><strong>Descripción de Material Design</strong></h3>
         <article>
-            Material Design es un sistema de diseño creado por Google para ayudar a construir experiencias de diseño en diferentes sistemas operativos y en la web.
+            Material Design es un sistema de diseño creado por Google para ayudar a construir experiencias de diseño en
+            diferentes sistemas operativos y en la web.
             <br></br>
-            Los componentes Material son bloques de construcción interactivos para crear una interfaz de usuario, e incluyen un sistema de estados incorporado para comunicar diferentes estados como selección, error, hover, pulsación, etc.
+            Los componentes Material son bloques de construcción interactivos para crear una interfaz de usuario, e
+            incluyen un sistema de estados incorporado para comunicar diferentes estados como selección, error, hover,
+            pulsación, etc.
             <br></br>
             Algunos de sus componentes son:
-            Visualización:  Tarjetas, listas y hojas para ayudar a organizar y mostrar el contenido.
+            Visualización: Tarjetas, listas y hojas para ayudar a organizar y mostrar el contenido.
             <br></br>
-            Entrada:  Campos de texto, fichas y controles de selección. Permiten al usuario introducir datos o realizar una selección entre las opciones ofrecidas.
+            Entrada: Campos de texto, fichas y controles de selección. Permiten al usuario introducir datos o realizar
+            una selección entre las opciones ofrecidas.
             <br></br>
-            Comunicación: Alertar a los usuarios y utilizar mensajes con la ayuda de componentes como barras de snack, banners y diálogos.
+            Comunicación: Alertar a los usuarios y utilizar mensajes con la ayuda de componentes como barras de snack,
+            banners y diálogos.
             <br></br>
             (Material Design, 2015)
-         </article>
+        </article>
         <br></br>
     </section>
 
@@ -47,14 +170,17 @@
 
 <footer>
     <article>Editor de HTML utilizado: Visual Studio Code</article>
-    <article>Descubre el editor en la siguiente página: <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VSCode</a>.</article>
+    <article>Descubre el editor en la siguiente página: <a href="https://code.visualstudio.com/" target="_blank"
+            rel="noopener noreferrer">VSCode</a>.</article>
     <br>
     </br>
     <h3>Bibliografía:</h3>
     <ul>
 
-        <li>  Material Design. (2015). Material Design. Material Design. de https://material.io/design/introduction#components
-            <a href="https://material.io/design/introduction#components">Material Design</a></li>
-        <br><br/>
+        <li> Material Design. (2015). Material Design. Material Design. de
+            https://material.io/design/introduction#components
+            <a href="https://material.io/design/introduction#components">Material Design</a>
+        </li>
+        <br><br />
     </ul>
 </footer>
