@@ -68,7 +68,7 @@ function passwordStrength(pw) {
       + /[^A-Za-z0-9]/.test(pw)  /* a special character */
      )
 }
-
+  
 let pwInput = document.getElementById("pwd")
 
 pwInput.addEventListener('keyup', function() { 

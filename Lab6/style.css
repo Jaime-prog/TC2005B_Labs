@@ -2,6 +2,10 @@
 
 body{
 	font-family: 'Roboto', sans-serif;
+    height:100;
+    align-items: center;
+    justify-content: center;
+
 }
 * {
 	margin: 0;
@@ -10,6 +14,7 @@ body{
 i {
 	margin-right: 10px;
 }
+
 
 /*----------bootstrap-navbar-css------------*/
 .navbar-logo{
