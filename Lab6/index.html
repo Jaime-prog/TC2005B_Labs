@@ -11,10 +11,13 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-x.x.x.min.css" />
+
     <title>Lab6</title>
 </head>
 
 <body>
+    <script src="index.js"></script>
     <nav class="navbar navbar-expand-custom navbar-mainbg">
         <a class="navbar-brand navbar-logo" href="#">Laboratorio 6 Programación orientada a eventos</a>
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -43,7 +46,7 @@
         </div>
     </nav>
 
-    <h4 class="centrar-texto">Comparador de Contraseñas</h4>
+    <h4>Comparador de Contraseñas</h4>
     <form name = "myForm">
         <table>
         <tr>
@@ -76,8 +79,13 @@
           </td>
         </tr>
         </table>
-    
         </form>
+
+        <br></br>
+        <h4>Nivel de seguridad de contraseña</h4>
+        <input type="password" id="pwd" placeholder="Ingresar Contraseña"><br>
+    <progress id="strength" value="0" max="5"></progress>
+
 
     <div class="card">
         <div class="card-body">
@@ -109,7 +117,7 @@
                 validación hecha en el cliente también se debe realiza en el servidor. (OWASP, 2019)</p>
         </div>
     </div>
-    <script src="index.js"></script>
+    
 </body>
 
 <footer>

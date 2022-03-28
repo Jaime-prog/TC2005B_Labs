@@ -41,39 +41,37 @@ $(".navbar-toggler").click(function () {
 
 
 // Funcion para validar si las 2 contraseñas tecleados son iguales
-function checkPass(){
+function checkPass() {
     var check1 = document.myForm.check1.value;
     var check2 = document.myForm.check2.value;
-    if (check1 == check2){
-      document.myForm.txtOutput.value = "Sí Coinciden";
+    if (check1 == "" || check2 == "") {
+        document.myForm.txtOutput.value = "Favor de llenar ambos campos";
     } else {
-      document.myForm.txtOutput.value = "No, vuelve a intentarlo";
-    }
-  }
-
-//enviar formulario con la tecla ENTER
-function enterEnviar(event) {
-    if (event.keyCode == 13) {
-        validarContraseña()
+        if (check1 == check2) {
+            document.myForm.txtOutput.value = "Sí Coinciden";
+        } else {
+            document.myForm.txtOutput.value = "No coinciden, vuelve a intentarlo";
+        }
     }
 }
+
+
+
 
 // Función para verificar la seguridad de la contraseña
-function passwordChanged() {
-    var strength = __('strength');
-    var strongRegex = new RegExp("^(?=.{14,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
-    var mediumRegex = new RegExp("^(?=.{10,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
-    var enoughRegex = new RegExp("(?=.{8,}).*", "g");
-    var pwd = document.getElementById("password");
-    if (pwd.value.length == 0) {
-        strength.innerHTML = 'Escribe tu contraseña';
-    } else if (false == enoughRegex.test(pwd.value)) {
-        strength.innerHTML = 'Contraseña mínima de 8 caracteres';
-    } else if (strongRegex.test(pwd.value)) {
-        strength.innerHTML = '<span style="color:green">Fuerte!</span>';
-    } else if (mediumRegex.test(pwd.value)) {
-        strength.innerHTML = '<span style="color:orange">Media!</span>';
-    } else {
-        strength.innerHTML = '<span style="color:red">Débil!</span>';
-    }
+function passwordStrength(pw) {
+    return /.{8,}/.test(pw) * (  /* at least 8 characters */
+      /.{12,}/.test(pw)          /* bonus if longer */
+      + /[a-z]/.test(pw)         /* a lower letter */
+      + /[A-Z]/.test(pw)         /* a upper letter */
+      + /\d/.test(pw)            /* a digit */
+      + /[^A-Za-z0-9]/.test(pw)  /* a special character */
+     )
 }
+
+let pwInput = document.getElementById("pwd")
+
+pwInput.addEventListener('keyup', function() { 
+ document.getElementById("strength").value = 
+ passwordStrength(pwInput.value)
+})
