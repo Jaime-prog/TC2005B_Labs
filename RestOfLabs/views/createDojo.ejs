@@ -1,0 +1,16 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+<body>
+
+    <div class="create-blog content"></div>
+        <form id="dojos-form" method="POST" action="/dojos">
+        <label>¿Cual es el nombre del Dojo?</label>
+        <input type="text" name ="nombre" value="">
+        <label>¿Cual es la direccion del Dojo?</label>
+        <input type="text" name ="direccion" value="">
+        <input type="submit" value="submit" />
+        </form>
+    </div>    
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>
