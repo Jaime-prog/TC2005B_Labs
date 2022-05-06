@@ -29,7 +29,7 @@ app.get('/about', (req, res) => {
 })
 
 app.get('/dojos', (req, res) => {
-    res.render('create', { title: 'Crear nuevo Dojo' });
+    res.render('create', { title: 'Crear Nuevo Dojo' });
 })
 
 app.post('/dojos', urlencodedParser, (req, res) => {
